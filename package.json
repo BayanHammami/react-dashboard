@@ -1,0 +1,37 @@
+{
+  "name": "react-dashboard",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@babel/polyfill": "^7.0.0",
+    "@material-ui/core": "^3.1.2",
+    "@material-ui/icons": "^3.0.1",
+    "aws-sdk": "^2.330.0",
+    "chart.js": "^1.1.1",
+    "material-ui": "^0.20.2",
+    "plotly.js": "^1.41.3",
+    "react": "^16.5.2",
+    "react-chartjs": "^1.2.0",
+    "react-dom": "^16.5.2",
+    "react-plotly.js": "^2.2.0",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.0.4",
+    "react-vis": "^1.11.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "build-and-deploy": "npm run build && s3cmd sync build/* s3://react-dashboard-bh && echo '🚀  Deployed!'"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
