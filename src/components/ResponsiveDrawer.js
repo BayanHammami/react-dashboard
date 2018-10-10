@@ -93,7 +93,7 @@ class ResponsiveDrawer extends React.Component {
               <MenuIcon />
             </IconButton>
             <Typography variant="title" color="inherit" noWrap>
-              React Dashboard
+              React Dashboard Stage
             </Typography>
           </Toolbar>
         </AppBar>
