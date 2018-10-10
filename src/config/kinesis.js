@@ -1,6 +1,4 @@
-// Configure Credentials to use Cognito
 import AWS from 'aws-sdk';
-import { readStore, writeStore } from './localstore.js';
 
 AWS.config.credentials = new AWS.CognitoIdentityCredentials({
     IdentityPoolId: 'ap-southeast-2:12147d51-1a30-4f83-a738-1ca36888f28b'
@@ -13,7 +11,6 @@ var kinesis = new AWS.Kinesis({
 });
 
 export const collectEvent = (eventName) => {
-
   var record = {
     Data: JSON.stringify({
         url: window.location.href,
